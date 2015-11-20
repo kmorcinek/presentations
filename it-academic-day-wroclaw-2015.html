@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+
+  Making Waves template: Konrad Dzwinel
+  URL:
+-->
+
+<html>
+  <head>
+    <title>Presentation</title>
+
+    <meta charset='utf-8'>
+
+    <!-- Main JS file from html5slides project, you should probably don't touch it -->
+    <script src="resources/libs/slides.js"></script>
+    <!-- jQuery - it's not required, if you don't need it - remove it -->
+    <script src="resources/libs/jquery.js"></script>
+
+    <!-- Main CSS file from html5slides project - again, don't touch this stuff -->
+    <link rel="stylesheet"  href='resources/styles.css'>
+    <!-- Some nice icons - check them out: http://shoestrap.org/downloads/elusive-icons-webfont/ -->
+    <link rel="stylesheet" href="resources/elusive-webfont/css/elusive-webfont.css">
+    <!-- Making Waves specific styles -->
+    <link rel="stylesheet" href="resources/mw-template.css">
+  </head>
+
+  <body style='display: none'>
+
+    <!-- This is main container, you can change presentation layout by changing layout-regular to layout-faux-widescreen or layout-widescreen.-->
+    <section class='slides layout-regular'>
+
+      <!-- First slide with big company logo -->
+      <article class='biglogo'></article>
+
+      <!-- Title slide -->
+      <article class="title_slide">
+        <h1>Tworzenie kodu w Visual Studio na sterydach</h1>
+        <!-- <h2>and here comes the subtitle <span class="pink">.</span></h2> -->
+
+        <p>
+          Krzysztof Morcinek
+		  <br />
+		  IT Academic Day Wrocław
+          <br />
+          19 listopada, 2015
+        </p>
+      </article>
+
+	  <!-- wyrzucic ikony z paska, czysty pulpit -->
+	  
+      <article>
+          <h3>Plan</h3>
+          <ul>
+			  <li>Co to jest Resharper (R#)</li>
+              <li>Resharper refactorings</li>
+              <li>Resharper templates</li>
+			  <li>Skróty klawiszowe</li>
+              <li>Co to jest VsVim</li>
+          </ul>
+      </article>
+	  
+	  <article>
+          <h3>Resharper</h3>
+          <ul class="build">
+              <li>Statyczna analiza kodu</li>
+			  <li>Generowanie kodu</li>
+			  <li>Refactorings</li>
+              <li>=> zwiększona produktywność</li>
+			  <!-- <li>Visual Studio, ale R# robi to lepiej</li> -->
+              <li>Darmowy dla studentów</li>
+          </ul>
+      </article>
+	  
+	  <article>
+          <h3>Resharper - demo</h3>
+          <ul>
+		      <li>ALT+ENTER - god shortcut</li>
+              <li>Extract method</li>
+			  <li>Introduce Variable</li>
+			  <li>Change signature</li>
+			  <li>Insert constructor</li>
+          </ul>
+      </article>
+	  
+	  <article>
+          <h3>Resharper green</h3>
+          <ul class="build">
+              <li>Dużo dobrych podpowiedzi</li>
+              <li>Dużo można się nauczyć</li>
+              <li>Przewiduje gdzie są problemy w kodzie</li>
+			  <li>Standardy kodowania wewnątrz zespołu</li>
+          </ul>
+      </article>
+	  
+      <article>
+          <h3>Wokół szybkiego pisania</h3> <!-- Tysiące keystroków dziennie -->
+          <ul class="build">
+              <li>Skróty klawiszowe</li>
+              <li>Myszka jest za wolna</li> <!-- Od klikania w cos co mozna enterem, do Ctrl+Tab -->
+			  <li>Nawigację po metodach też klawiaturą</li>
+              <li>R# - Go to Everything (Ctrl+T)</li>
+          </ul>
+      </article>
+	  
+      <article>
+          <h3>Wstawka ze skrótami</h3>
+          <ul class="build">
+              <li>Ctrl+X - wycina niezaznaczoną linię</li>
+              <li>Ctrl+C - kopiuje niezaznaczoną linię</li>
+              <li>Ctrl+D - duplikuje linię (R#)</li>
+			  <li>Ctrl+K, D - formatuj kod (VS)</li>
+              <li>Shift + PPM - "Copy as path" <img src="resources\images\copy as path.png" style='height: 200px'/></li>
+          </ul>
+      </article>
+
+	  <article>
+          <h3>Resharper - Code Templates</h3>
+          <ul class="build">
+              <li>File Templates</li>
+              <!-- <li>J - join</li> -->
+              <li>Live Templates
+				<ul class="build">
+				  <li>if, foreach, for, tryf, try</li>
+				  <li>test</li>
+				  <li>ef -> <code>@Html.EditorFor(m => m.$field$)</code></li>
+                </ul>
+              </li>
+			  <li>Surround Templates (if)</li>
+			  <li>Postfix templates (null, notnull)</li>
+              <li>Unikamy pisanie nudnego trywialnego kodu, skupiamy się na meritum</li>
+          </ul>
+      </article>
+	  
+      <article>
+          <h3>VsVim</h3>
+		  <p>Dodatek do Visual Studio</p>
+          
+          <!-- Note class "build" used here it indicates that each point of this list requires action before showing up -->
+          <ul class="build">
+              <li>Demo - makro rozbijające parametry do nowych linii</li>
+              <!-- <li>J - join</li> -->
+              <li>Demo - makro refactoryzujące</li>
+			  <!-- qu, duza czesc do 'i', konkretny ex do 'o' -->
+          </ul>
+      </article>
+
+	  <article>
+          <h3>Podsumowanie</h3>
+          <ul>
+			  <li>Resharper</li>
+              <li>Jak bezpiecznie refaktorować</li>
+              <li>(VsVim)</li>
+          </ul>
+      </article>
+
+         <article class='problem'>
+            <h2><span class="icon icon-smiley-alt"></span>Thank You! Any question?</h2>
+            <div class='contact_me'>
+                <span class="icon icon-pencil-alt"></span><a href='mailto:krzysztof.morcinek@gmail.com'>krzysztof.morcinek@gmail.com</a><br />
+                <span class="icon icon-twitter"></span><a href='https://twitter.com/kmorcinek'>kmorcinek</a><br />
+                <span class="icon icon-github"></span><a href='https://github.com/kmorcinek'>kmorcinek</a><br />
+                <a href='https://krzysztofmorcinek.wordpress.com'>Blog 'Show me the code' (krzysztofmorcinek.wordpress.com)</a><br />
+            </div>
+            <style>
+                .contact_me a, .contact_me a:visited, .slides > article.problem .contact_me .icon {
+                    color: black;
+                    font-size: 75%;
+                }
+            </style>
+        </article>
+
+
+	  <article>
+            <q style='margin-top: 60px;'>[..] productive developers surround themselves with powerful tools for iterative development and debugging
+            </q>
+            <div class='author'>
+                Paul Irish
+            </div>
+        </article>
+		<!-- 
+		Jakie jeszcze dodatki ewentualnie -->
+
+    </section>
+  </body>
+</html>
