@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+
+  Making Waves template: Konrad Dzwinel
+  URL:
+-->
+
+<html>
+  <head>
+    <title>Presentation</title>
+
+    <meta charset='utf-8'>
+
+    <!-- Main JS file from html5slides project, you should probably don't touch it -->
+    <script src="resources/libs/slides.js"></script>
+    <!-- jQuery - it's not required, if you don't need it - remove it -->
+    <script src="resources/libs/jquery.js"></script>
+
+    <!-- Main CSS file from html5slides project - again, don't touch this stuff -->
+    <link rel="stylesheet"  href='resources/styles.css'>
+    <!-- Some nice icons - check them out: http://shoestrap.org/downloads/elusive-icons-webfont/ -->
+    <link rel="stylesheet" href="resources/elusive-webfont/css/elusive-webfont.css">
+    <!-- Making Waves specific styles -->
+    <link rel="stylesheet" href="resources/mw-template.css">
+  </head>
+
+  <body style='display: none'>
+
+    <!-- This is main container, you can change presentation layout by changing layout-regular to layout-faux-widescreen or layout-widescreen.-->
+    <section class='slides layout-regular'>
+
+        
+      <!-- Title slide -->
+      <article class="title_slide nologo">
+            <h1 style='margin-top: 115px; margin-bottom: 115px'>Wystartuj z GITem w następnym projekcie.</h1>
+
+            <p>
+                Krzysztof Morcinek
+          <br>
+                20 październik, 2015
+            </p>
+			<script>
+                function slide2() {
+                    setTimeout(function () {
+                        $('#the_heart').airport(['?', '♥']);
+                    }, 5000);
+                }
+            </script>
+        </article>
+
+	  <!-- wyrzucic ikony z paska, czysty pulpit -->
+	  
+        <article class="nologo">
+            <ul class="build">
+                <li>"Talk is cheap. Show me the code." - Linus Torvalds</li>
+				<li>I use console cause we can see (and understand) exactly what is happening</li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>why we should learn</h3>
+            <ul class="build">
+                <li>Much better than centralized control systems</li>
+                <li><a href="http://git-scm.com/book">gitbook - Pro Git</a></li>
+                <li><a href="http://git-scm.com/book/pl">gitbook - Pro Git - polish</a></li>
+				<li>Requires some learning :)</li>
+                <!--flow from people not experiencing problems-->
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>decentralized</h3>
+            <ul class="build">
+                <li>no server needed</li>
+                <li>whole history, logs always with you</li>
+                <li>work offline</li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>tree</h3>
+            <ul class="build">
+                <li><img src="resources/images/git-cherry-pick.png" /></li>
+                <li>branch is pointer to commit</li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>git rebase --interactive</h3>
+            <ul class="build">
+                <li>pick, in another place</li>
+                <li>reword</li>
+                <li>edit</li>
+                <li>squash</li>
+                <li>fixup</li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>git reflog</h3>
+            <ul class="build">
+				<li>what happens in Git, stays in git</li>
+                <li>"forever", for 30 days</li>
+                <li>we want to retrieve something what happened hours ago, not weeks ago</li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>rewriting history</h3>
+            <ul class="build">
+                <li>locally play as much as possible</li>
+                <li>don't change history that was pushed</li>
+                <li>git push -f</li>
+                <li><em>my feature branch can be rewritten</em></li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>merge vs rebase</h3>
+            <ul class="build">
+                <li><a href="https://github.com/git-examples/line-conflict/">Line-conflict</a></li>
+                <li><a href="https://github.com/git-examples/conflict-with-manual-edit/">Conflict-with-manual-edit</a></li>
+            </ul>
+        </article>
+		
+		<article class="nologo">
+            <ul class="build">
+                <li><img src="resources/images/git-rebase.png" /></li>
+                <li><img src="resources/images/git-merge.png" /></li>
+            </ul>
+        </article>
+		
+        <article class="nologo">
+            <h3>unwanted merge</h3>
+            <ul class="build">
+                <li><img src="resources/images/unwanted-commit.png" /></li>
+            </ul>
+        </article>
+		
+        <article class="nologo">
+            <h3>prefer rebase</h3>
+            <ul class="build">
+                <li>git config --global --bool pull.rebase true</li>
+            </ul>
+        </article>
+		
+        <article class="nologo">
+            <h3>git svn</h3>
+            <ul class="build">
+                <li>spull = svn rebase</li>
+                <li>spush = svn dcommit</li>
+				<li>works like a charm</li>
+            </ul>
+        </article>
+
+		<article class="nologo">
+            <h3>example workflows</h3>
+            <ul class="build">
+                <li>straight history</li>
+                <li>feature branches and commits to development (master)</li>
+            </ul>
+        </article>	
+
+        <article class="nologo">
+            <h3>aliases</h3>
+            <ul class="build">
+                <li>rh = reset --hard</li>
+                <li>amend = commit --amend -aC HEAD</li>
+                <li><a href="https://gist.github.com/kmorcinek/5747081">My example mappings</a></li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>cherry-pick</h3>
+            <ul class="build">
+                <li>TEST-ONLY commit pattern.</li>
+            </ul>
+        </article>
+		
+        <article class='problem nologo'>
+            <h2><span class="icon icon-smiley-alt"></span>Thank You! Any question?</h2>
+            <div class='contact_me'>
+                <span class="icon icon-pencil-alt"></span><a href='mailto:krzysztof.morcinek@gmail.com'>krzysztof.morcinek@gmail.com</a><br />
+                <span class="icon icon-twitter"></span><a href='https://twitter.com/kmorcinek'>kmorcinek</a><br />
+                <span class="icon icon-github"></span><a href='https://github.com/kmorcinek'>kmorcinek</a><br />
+                <a href='https://krzysztofmorcinek.wordpress.com'>Blog 'Show me the code'</a><br />
+            </div>
+            <style>
+                .contact_me a, .contact_me a:visited, .slides > article.problem .contact_me .icon {
+                    color: black;
+                    font-size: 75%;
+                }
+            </style>
+        </article>
+
+        <article class="nologo">
+            <q style='margin-top: 60px;'>[..] productive developers surround themselves with powerful tools for iterative development and debugging
+            </q>
+            <div class='author'>
+                Paul Irish
+            </div>
+        </article>
+
+    </section>
+  </body>
+</html>
