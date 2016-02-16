@@ -1,2 +1,3 @@
-# presentations
-My public presentations, lectures
+## My public presentations, lectures
+
+redirect to: http://kmorcinek.github.io/presentations/
