@@ -53,8 +53,20 @@
         </article>
 
 	  <!-- wyrzucic ikony z paska, czysty pulpit -->
+      <!-- odpiac skróty gita -->
 	  
-        <article class="nologo">
+      <article>
+          <h3>Plan</h3>
+          <ul>
+			  <li>Jak Git przechowuje kod</li>
+              <li>Branche</li>
+			  <li>Three way merge - kdiff3</li>
+              <li>Cherry-pick</li>
+              <li>Rebase-interactive</li>
+          </ul>
+      </article>
+
+	    <article class="nologo">
             <ul class="build">
                 <li>"Talk is cheap. Show me the code." - Linus Torvalds</li>
 				<li>I use console cause we can see (and understand) exactly what is happening</li>
@@ -176,8 +188,8 @@
         <article class="nologo">
             <h3>aliases</h3>
             <ul class="build">
-                <li>rh = reset --hard</li>
-                <li>amend = commit --amend -aC HEAD</li>
+                <li>git rh = git reset --hard</li>
+                <li>git amend = git commit --amend -aC HEAD</li>
                 <li><a href="https://gist.github.com/kmorcinek/5747081">My example mappings</a></li>
             </ul>
         </article>
@@ -185,16 +197,28 @@
         <article class="nologo">
             <h3>cherry-pick</h3>
             <ul class="build">
-                <li>TEST-ONLY commit pattern.</li>
+			    <li>w praktyce: nałożenie zmian z jednego commita na aktualny kod</li>
+                <li>DEMO: TEST-ONLY commit pattern</li>
+				<li><a href="https://krzysztofmorcinek.wordpress.com/2016/02/16/git-cherry-pick-izolowanie-trwalych-lokalnych-zmian-od-glownego-brancha/">
+				Post: git cherry-pick – Izolowanie trwałych lokalnych zmian od głównego brancha</a></li>
             </ul>
         </article>
 		
         <article class="nologo">
             <h3>where to host projects</h3>
             <ul class="build">
-                <li>GitHub - most popular for OS projects</li>
+                <li>GitHub - most popular for Open Source projects</li>
+                <li><a href='http://www.maciejaniserowicz.com/daj-sie-poznac/'>Konkurs #dajsiepoznac</a></li>
                 <li>BitBucket - free alternative (even for private repos with up to couple contributors)</li>
 				<li>show your code, smart recruiters also search throught projects</li>
+            </ul>
+        </article>
+		
+        <article class="nologo">
+            <h3>Credits</h3>
+            <ul>
+                <li>GitHub - most popular for Open Source projects</li>
+				<li><a href='http://www.slideshare.net/tkaczmarzyk/purely-functional-data-structures-57157374'>Some pics and inspiration from presentation Purely functional data structures</a></li>
             </ul>
         </article>
 		
