@@ -1,3 +1,3 @@
 ## My public presentations, lectures
 
-redirect to: http://kmorcinek.github.io/presentations/
+NOTE: not maintained anymore, moved to [Wystąpienia publiczne](https://krzysztofmorcinek.wordpress.com/publiczne-wystapienia/)
