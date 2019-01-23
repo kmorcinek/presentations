@@ -60,7 +60,8 @@
           <ul>
 			  <li>Jak Git przechowuje kod</li>
               <li>Branche</li>
-			  <li>Three way merge - kdiff3</li>
+			  <li>Merging - not so silver bullet</li>
+              <li>Three way merge - kdiff3</li>
               <li>Cherry-pick</li>
               <li>Rebase-interactive</li>
           </ul>
@@ -108,8 +109,74 @@
                 <li><img class="fit-image" src="resources/images/commits-content.png" /></li>
             </ul>
         </article>
+		
+		<article class="nologo">
+            <h3>merging</h3>
+            <ul class="build">
+                <li>branches cheaper (faster) than in svn</li>
+				<li>enables creating pull request</li>
+				<li>-> enables making CODE REVIEWS</li>
+				<li>overengineering with merge as a way for everything</li>
+				<li><em>master to master merge</em> antippatern</li>
+            </ul>
+        </article>
+
+		<article class="nologo">
+            <h3>three way merge</h3>
+            <ul class="build">
+                <li>we have BASE parent that we can compare to</li>
+				<li>DEMO</li>
+				<li>automatic resolving can be wrong, very rare and easy to spot. Example is <em>using</em> directive</li>
+				<li>using 2 way merge (diff) tool is waste of time</li>
+            </ul>
+        </article>
+
+		<article class="nologo">
+            <h3>three way merge ...</h3>
+            <ul class="build">
+              <li><img class='fit-image' src="resources/images/merge-in-kdiff.png" /></li>
+            </ul>
+        </article>
+		
+		<article class="nologo">
+            <h3>example workflow</h3>
+            <ul class="build">
+                <li>as we moved from SVN...</li>
+				<li>try to keep straight history</li>
+                <li>feature branches and commits to development (master)</li>
+            </ul>
+        </article>	
+		
+        <article class="nologo">
+            <h3>git svn</h3>
+            <ul class="build">
+                <li>spull = svn rebase</li>
+                <li>spush = svn dcommit</li>
+				<li>works like a charm</li>
+				<li>just some small adjustments like commit authors ...</li>
+            </ul>
+        </article>
 
         <article class="nologo">
+            <h3>aliases</h3>
+            <ul class="build">
+                <li>git rh = git reset --hard</li>
+                <li>git amend = git commit --amend -aC HEAD</li>
+                <li><a href="https://gist.github.com/kmorcinek/5747081">My example mappings</a></li>
+            </ul>
+        </article>
+
+        <article class="nologo">
+            <h3>cherry-pick</h3>
+            <ul class="build">
+			    <li>w praktyce: nałożenie zmian z jednego commita na aktualny kod</li>
+                <li>DEMO: TEST-ONLY commit pattern</li>
+				<li><a href="https://krzysztofmorcinek.wordpress.com/2016/02/16/git-cherry-pick-izolowanie-trwalych-lokalnych-zmian-od-glownego-brancha/">
+				Post: git cherry-pick – Izolowanie trwałych lokalnych zmian od głównego brancha</a></li>
+            </ul>
+        </article>
+		
+		<article class="nologo">
             <h3>git rebase --interactive</h3>
             <ul class="build">
                 <li>pick, in another place</li>
@@ -135,12 +202,12 @@
                 <li>locally play as much as possible</li>
                 <li>don't change history that was pushed</li>
                 <li>git push -f</li>
-                <li><em>my feature branch can be rewritten</em></li>
+                <li><em>my own feature branch can be rewritten</em></li>
             </ul>
         </article>
 
         <article class="nologo">
-            <h3>merge vs rebase</h3>
+            <h3>merge vs rebase (advanced cherry-pick)</h3>
             <ul class="build">
                 <li><a href="https://github.com/git-examples/line-conflict/">Line-conflict</a></li>
                 <li><a href="https://github.com/git-examples/conflict-with-manual-edit/">Conflict-with-manual-edit</a></li>
@@ -167,43 +234,7 @@
                 <li>git config --global --bool pull.rebase true</li>
             </ul>
         </article>
-		
-        <article class="nologo">
-            <h3>git svn</h3>
-            <ul class="build">
-                <li>spull = svn rebase</li>
-                <li>spush = svn dcommit</li>
-				<li>works like a charm</li>
-            </ul>
-        </article>
 
-		<article class="nologo">
-            <h3>example workflows</h3>
-            <ul class="build">
-                <li>straight history</li>
-                <li>feature branches and commits to development (master)</li>
-            </ul>
-        </article>	
-
-        <article class="nologo">
-            <h3>aliases</h3>
-            <ul class="build">
-                <li>git rh = git reset --hard</li>
-                <li>git amend = git commit --amend -aC HEAD</li>
-                <li><a href="https://gist.github.com/kmorcinek/5747081">My example mappings</a></li>
-            </ul>
-        </article>
-
-        <article class="nologo">
-            <h3>cherry-pick</h3>
-            <ul class="build">
-			    <li>w praktyce: nałożenie zmian z jednego commita na aktualny kod</li>
-                <li>DEMO: TEST-ONLY commit pattern</li>
-				<li><a href="https://krzysztofmorcinek.wordpress.com/2016/02/16/git-cherry-pick-izolowanie-trwalych-lokalnych-zmian-od-glownego-brancha/">
-				Post: git cherry-pick – Izolowanie trwałych lokalnych zmian od głównego brancha</a></li>
-            </ul>
-        </article>
-		
         <article class="nologo">
             <h3>where to host projects</h3>
             <ul class="build">
